@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body>
+    <center>
+        <form action="/action_page.php">
+            <h3><u>REGISTRATION PAGE</u></h3>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>NAME</td>
+                    <td><input type="text" name="uname" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td>
+                    <td><input type="password" name="pass" placeholder="Enter your password" required></td>
+                </tr>
+                <tr>
+                    <td>E-MAIL ID</td>
+                    <td><input type="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td>PHONE NUMBER</td>
+                    <td><input type="tel" name="phone" placeholder="Enter your phone number" required></td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>
+                        <input type="radio" name="gen" value="m"> Male
+                        <input type="radio" name="gen" value="f"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>DATE OF BIRTH</td>
+                    <td>
+                        <select name="day">
+                            <option value="day">DAY</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <!-- Add more days -->
+                        </select>
+                        <select name="month">
+                            <option value="month">MONTH</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <!-- Add more months -->
+                        </select>
+                        <select name="year">
+                            <option value="year">YEAR</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <!-- Add more years -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>LANGUAGES KNOWN</td>
+                    <td>
+                        <input type="checkbox" name="lang" value="kan"> Kannada
+                        <input type="checkbox" name="lang" value="eng"> English
+                        <input type="checkbox" name="lang" value="fre"> French
+                        <input type="checkbox" name="lang" value="spa"> Spanish
+                    </td>
+                </tr>
+                <tr>
+                    <td>ADDRESS</td>
+                    <td><textarea name="addr" rows="4" cols="30" placeholder="Enter your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
